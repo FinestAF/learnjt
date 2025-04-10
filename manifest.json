@@ -1,0 +1,16 @@
+
+{
+  "name": "Learn JT Company - Driving Theory in 1 Day",
+  "short_name": "LearnJT",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#4B0082",
+  "description": "Learn JT Company: UK Driving Theory Test in One Day",
+  "icons": [
+    {
+      "src": "logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
