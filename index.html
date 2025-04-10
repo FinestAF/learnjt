@@ -2,47 +2,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#4B0082"/>
-  <link rel="manifest" href="manifest.json">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="icon" href="icon.png">
-  <title>Learn JT Company - Driving Theory Guide</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Learn JT Company: UK Driving Theory Test in One Day">
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" href="icon.png" type="image/png" />
+  <title>Learn JT Company - Driving Theory in 1 Day</title>
+  <script>
+    window.addEventListener('scroll', () => {
+      const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const scrolled = (winScroll / height) * 100;
+      document.getElementById("progressBar").style.width = scrolled + "%";
+    });
+  </script>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: url('background.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      line-height: 1.6;
+      padding: 20px;
+    }
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 20px;
+      border-radius: 10px;
+    }
+    h1, h2, h3 {
+      color: #B794F4;
+    }
+    .section {
+      margin-bottom: 40px;
+    }
+    .video {
+      margin: 10px 0;
+    }
+    .quiz {
+      margin-top: 20px;
+      background: #222;
+      padding: 10px;
+      border-radius: 5px;
+    }
+    .answer {
+      display: none;
+      margin-top: 10px;
+      color: #0f0;
+    }
+    button {
+      background-color: #B794F4;
+      color: #000;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    footer {
+      text-align: center;
+      font-size: 14px;
+      color: #999;
+      margin-top: 40px;
+    }
+    .logo {
+      max-width: 200px;
+      display: block;
+      margin: 0 auto 20px;
+    }
+    #progressContainer {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 6px;
+      background-color: rgba(255,255,255,0.1);
+      z-index: 9999;
+    }
+    #progressBar {
+      height: 100%;
+      background-color: #B794F4;
+      width: 0;
+      transition: width 0.25s ease;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>Learn JT Company Driving Theory Guide</h1>
-    <p>Prepare for your UK Driving Theory Test in one day.</p>
-  </header>
-  <main>
-    <section>
-      <h2>1. Road Signs</h2>
-      <p>Study key UK road signs and their meanings. Focus on regulatory, warning, and informational signs.</p>
-      <a href="https://en.wikipedia.org/wiki/Road_signs_in_the_United_Kingdom" target="_blank">UK Road Sign Wiki</a>
-    </section>
-    <section>
-      <h2>2. Rules of the Road</h2>
-      <p>Understand rules such as speed limits, overtaking, and safe stopping distances. Recommended video: <a href="https://www.youtube.com/watch?v=1y_Ry3zH84k" target="_blank">Rules of the Road (5:30–11:10)</a>.</p>
-    </section>
-    <section>
-      <h2>3. Hazard Awareness</h2>
-      <p>Learn how to identify and respond to hazards. Focus on cyclists, pedestrians, and weather conditions.</p>
-      <a href="https://www.youtube.com/watch?v=wuvGhMw9kV4" target="_blank">Hazard Perception Demo</a>
-    </section>
-    <section>
-      <h2>4. Safety and Your Vehicle</h2>
-      <p>Know vehicle checks and dashboard warnings. Important symbols: oil, battery, brake, and tyre pressure.</p>
-      <a href="https://www.rac.co.uk/drive/advice/know-how/dashboard-warning-lights/" target="_blank">Dashboard Warning Lights</a>
-    </section>
-    <section>
-      <h2>5. Mock Quiz</h2>
-      <p>Test your knowledge using a mock theory quiz.</p>
-      <a href="https://www.safedrivingforlife.info/take-practice-theory-test/" target="_blank">Official Practice Test</a>
-    </section>
-  </main>
-  <footer>
-    <p>© 2025 Learn JT Company. All rights reserved.</p>
-  </footer>
+  <div id="progressContainer"><div id="progressBar"></div></div>
+  <div class="overlay">
+    <img src="logo.png" class="logo" alt="Destiny JT Company Logo">
+    <h1>Learn JT Company - UK Driving Theory Test Guide</h1>
+    <p>This one-day guide is designed to help you pass the UK Driving Theory Test. Follow each section carefully, use the video guides, and practice with quizzes. Master each topic and take the final quiz to assess your readiness.</p>
+
+    <!-- Full learning content would be here -->
+
+    <footer>
+      <p>&copy; 2025 Learn JT Company | Powered by JTC Destiny</p>
+    </footer>
+  </div>
+  <script>
+    window.addEventListener('load', () => {
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('sw.js');
+      }
+    });
+  </script>
 </body>
 </html>
