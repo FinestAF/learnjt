@@ -1,0 +1,16 @@
+
+{
+  "name": "Learn JT Company",
+  "short_name": "LearnJT",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#f7f7f7",
+  "theme_color": "#5E4B8B",
+  "icons": [
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/2942/2942510.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
