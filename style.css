@@ -1,0 +1,42 @@
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: url('background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+  line-height: 1.6;
+  padding: 20px;
+}
+.logo {
+  width: 120px;
+  display: block;
+  margin: auto;
+}
+header, footer {
+  text-align: center;
+}
+h1, h2 {
+  color: #B794F4;
+}
+.quiz {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 8px;
+}
+.answer {
+  display: none;
+  color: #0f0;
+}
+#progress-container {
+  width: 100%;
+  background-color: #333;
+  border-radius: 8px;
+  margin: 20px auto;
+}
+#progress-bar {
+  height: 10px;
+  background-color: #B794F4;
+  width: 10%;
+  transition: width 0.3s ease;
+}
