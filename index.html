@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Learn JT Company: UK Driving Theory Test in One Day">
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" href="logo.png" type="image/png" />
+  <title>Learn JT Company - Driving Theory in 1 Day</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: url('modern-purple-bg.png') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      padding: 1.5rem;
+    }
+    h1, h2, h3 {
+      color: #B794F4;
+    }
+    .section {
+      background: rgba(0,0,0,0.7);
+      padding: 1rem;
+      margin-bottom: 2rem;
+      border-radius: 10px;
+    }
+    .quiz, .answer {
+      margin-top: 1rem;
+    }
+    button {
+      background-color: #B794F4;
+      color: #000;
+      border: none;
+      padding: 0.6rem 1rem;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.8rem;
+      color: #ccc;
+      margin-top: 3rem;
+    }
+    .progress-bar {
+      height: 5px;
+      background: #B794F4;
+      width: 0;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 9999;
+      transition: width 0.2s ease-out;
+    }
+    .video iframe {
+      width: 100%;
+      height: 215px;
+      border-radius: 8px;
+    }
+    .video a {
+      display: block;
+      margin-top: 0.5rem;
+      color: #B794F4;
+      text-decoration: underline;
+    }
+    nav {
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 0.8rem;
+      margin-bottom: 1rem;
+      border-radius: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+    }
+    nav a {
+      color: #B794F4;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="progress-bar" id="progress-bar"></div>
+  <img src="logo.png" alt="Destiny Logo" style="width: 120px; display: block; margin: 0 auto 1rem;" />
+  <h1>Learn JT Company - UK Driving Theory Test Guide</h1>
+  <p>This guide helps you pass the UK Driving Theory Test in one day. Each section includes clear summaries, embedded videos, and quizzes to test your learning.</p>
+  <footer>
+    &copy; 2025 Learn JT Company | Powered by JTC Destiny
+  </footer>
+  <script>
+    window.addEventListener('scroll', () => {
+      const scrollTop = document.documentElement.scrollTop;
+      const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const scrollPercent = (scrollTop / scrollHeight) * 100;
+      document.getElementById('progress-bar').style.width = scrollPercent + '%';
+    });
+  </script>
+</body>
+</html>
